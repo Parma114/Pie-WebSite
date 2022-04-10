@@ -30,8 +30,8 @@ gsap.from('.animate-menu', {
     stagger: 0.3
 });
 
-gsap.from('.animate-card', {
-    scrollTrigger: '.animate-card',
+gsap.from('.animate-card-1', {
+    scrollTrigger: '.animate-card-1',
     duration: 1,
     opacity: 0,
     y: -150,
@@ -40,6 +40,22 @@ gsap.from('.animate-card', {
 
 gsap.from('.animate-card-2', {
     scrollTrigger: '.animate-card-2',
+    duration: 1,
+    opacity: 0,
+    y: -150,
+    stagger: 0.1
+});
+
+gsap.from('.animate-card-3', {
+    scrollTrigger: '.animate-card-3',
+    duration: 1,
+    opacity: 0,
+    y: -150,
+    stagger: 0.1
+});
+
+gsap.from('.animate-card-4', {
+    scrollTrigger: '.animate-card-4',
     duration: 1,
     opacity: 0,
     y: -150,
