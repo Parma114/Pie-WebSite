@@ -12,7 +12,7 @@
         />
         <link rel="stylesheet" href="./styles.css" />
     </head>
-    <body>
+    <body style="overflow: hidden;">
 
         <!-- Navbar Section -->
         <nav class="navbar">
@@ -27,46 +27,38 @@
                 <a href="./index.html" class="navbar_link">Home</a>
                 <a href="./menu.html" class="navbar_link">Menu</a>
                 <a href="./about.html" class="navbar_link">About</a>
-                <a href="./login.html" class="navbar_link">Login</a>
+                <a id="navbar-login" href="#" class="navbar_link">Login</a>
             </div>
         </nav>
 
         <!-- Login Section -->
+        <div class="login">
+            <div class="login-form">
 
-        <!-- Footer Section -->
-        <div class="footer">
-            <div class="footer-wrapper">
-                <div class="footer-desc">
-                    <h1>PI Pie Industries</h1>
-                    <p>A Luxary Pie Makers WorldWide</p>
-                    <p id="phone">+91-9406355086</p>
-                </div>
-                <div class="footer-links"> 
-                    <div class="footer-title">Contact Us</div>
-                    <a href="./menu.html" class="footer-link">Contact</a>
-                    <a href="./menu.html" class="footer-link">Support</a>
-                    <a href="./menu.html" class="footer-link">Sponserships</a>
-                </div>
-            </div>
-            <div class="footer-wrapper">
-                <div class="footer-links"> 
-                    <div class="footer-title">Customer Care</div>
-                    <a href="./menu.html" class="footer-link">Pricing</a>
-                    <a href="./menu.html" class="footer-link">Request</a>
-                    <a href="./menu.html" class="footer-link">Complain</a>
-                    <a href="./menu.html" class="footer-link">FAQ</a>
+                <div class="button-box">
+                    <div id="login-btn"></div>
+                    <button id="logon-btn" type="button" class="toggle-btn"> Login </button>
+                    <button id="signup-btn" type="button" class="toggle-btn"> Sign Up </button>
                 </div>
 
-                <div class="footer-links"> 
-                    <div class="footer-title">Social Media</div>
-                    <a href="./menu.html" class="footer-link">Instagram</a>
-                    <a href="./menu.html" class="footer-link">Facebook</a>
-                    <a href="./menu.html" class="footer-link">YouTube</a>
-                </div>
+                <form id="login-user" class="login-input">
+                    <input type="text" id="username" class="login-input-field" placeholder="Username" required>
+                    <input type="text" id="password" class="login-input-field" placeholder="Password" required>
+                    <button type="button" class="login-submit-btn" onclick="login()"> Login </button>
+                </form>
+
+                <form id="sign-up" class="login-input">
+                    <input type="text" id="email" class="login-input-field" placeholder="Email" required>
+                    <input type="text" id="username"  class="login-input-field" placeholder="Username" required>
+                    <input type="text" id="password"  class="login-input-field" placeholder="Password" required>
+                    <button type="button" class="login-submit-btn" onclick="login()"> Sign In</button>
+                </form>
+
             </div>
         </div>
 
         <!-- Scripts -->
         <script src="./app.js"></script>
+        <script src="./login.js"></script>
     </body>
 </html>
